@@ -1,0 +1,923 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B6FBD862A9DE55B00843459 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBD852A9DE55B00843459 /* AppDelegate.swift */; };
+		3B6FBD882A9DE55B00843459 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBD872A9DE55B00843459 /* SceneDelegate.swift */; };
+		3B6FBD8A2A9DE55B00843459 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBD892A9DE55B00843459 /* ViewController.swift */; };
+		3B6FBD8D2A9DE55B00843459 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FBD8B2A9DE55B00843459 /* Main.storyboard */; };
+		3B6FBD8F2A9DE55C00843459 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FBD8E2A9DE55C00843459 /* Assets.xcassets */; };
+		3B6FBD922A9DE55C00843459 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6FBD902A9DE55C00843459 /* LaunchScreen.storyboard */; };
+		3B6FBD9D2A9DE55C00843459 /* FleaMarketAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBD9C2A9DE55C00843459 /* FleaMarketAppTests.swift */; };
+		3B6FBDA72A9DE55C00843459 /* FleaMarketAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBDA62A9DE55C00843459 /* FleaMarketAppUITests.swift */; };
+		3B6FBDA92A9DE55C00843459 /* FleaMarketAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FBDA82A9DE55C00843459 /* FleaMarketAppUITestsLaunchTests.swift */; };
+		3BAEC4EC2A9E3305003B3B52 /* Electronics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC4EB2A9E3305003B3B52 /* Electronics.storyboard */; };
+		3BAEC4F02A9EDD48003B3B52 /* ElectronicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC4EF2A9EDD48003B3B52 /* ElectronicsViewController.swift */; };
+		3BAEC4FC2A9EE266003B3B52 /* FakeStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC4FB2A9EE266003B3B52 /* FakeStoreModel.swift */; };
+		3BAEC4FF2A9EF270003B3B52 /* FakeStoreClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC4FE2A9EF270003B3B52 /* FakeStoreClientError.swift */; };
+		3BAEC5012A9EF2CA003B3B52 /* FakeStoreAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5002A9EF2CA003B3B52 /* FakeStoreAPIError.swift */; };
+		3BAEC5032A9EF69C003B3B52 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5022A9EF69C003B3B52 /* HTTPMethod.swift */; };
+		3BAEC5052A9EF728003B3B52 /* FakeStoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5042A9EF728003B3B52 /* FakeStoreAPI.swift */; };
+		3BAEC5072A9EFE8E003B3B52 /* FakeStoreClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5062A9EFE8E003B3B52 /* FakeStoreClient.swift */; };
+		3BAEC50A2A9F02AF003B3B52 /* ProductsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5092A9F02AF003B3B52 /* ProductsCollectionViewCell.swift */; };
+		3BAEC50C2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC50B2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib */; };
+		3BAEC5122AA0179B003B3B52 /* Jewelery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC5112AA0179B003B3B52 /* Jewelery.storyboard */; };
+		3BAEC5142AA017CC003B3B52 /* JeweleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5132AA017CC003B3B52 /* JeweleryViewController.swift */; };
+		3BAEC5162AA01842003B3B52 /* MensClothing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC5152AA01842003B3B52 /* MensClothing.storyboard */; };
+		3BAEC5182AA01851003B3B52 /* MensClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5172AA01851003B3B52 /* MensClothingViewController.swift */; };
+		3BAEC51A2AA018F8003B3B52 /* WomensClothing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC5192AA018F8003B3B52 /* WomensClothing.storyboard */; };
+		3BAEC51E2AA0196D003B3B52 /* WomensClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC51D2AA0196D003B3B52 /* WomensClothingViewController.swift */; };
+		71D1CFC21F5F27D204A66D6D /* Pods_FleaMarketApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821BF9EE10D77DBBB313C17 /* Pods_FleaMarketApp.framework */; };
+		8CBD6FB58C1C8B02B128E1EF /* Pods_FleaMarketAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707716B8958A16DD41CBE2FE /* Pods_FleaMarketAppTests.framework */; };
+		F49C6B8EA96DEFD720268CCC /* Pods_FleaMarketApp_FleaMarketAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD38C7935F6560317910B9 /* Pods_FleaMarketApp_FleaMarketAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B6FBD992A9DE55C00843459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6FBD7A2A9DE55B00843459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6FBD812A9DE55B00843459;
+			remoteInfo = FleaMarketApp;
+		};
+		3B6FBDA32A9DE55C00843459 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B6FBD7A2A9DE55B00843459 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6FBD812A9DE55B00843459;
+			remoteInfo = FleaMarketApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B6FBD822A9DE55B00843459 /* FleaMarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleaMarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6FBD852A9DE55B00843459 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B6FBD872A9DE55B00843459 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B6FBD892A9DE55B00843459 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B6FBD8C2A9DE55B00843459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B6FBD8E2A9DE55C00843459 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B6FBD912A9DE55C00843459 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B6FBD932A9DE55C00843459 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B6FBD982A9DE55C00843459 /* FleaMarketAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleaMarketAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6FBD9C2A9DE55C00843459 /* FleaMarketAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleaMarketAppTests.swift; sourceTree = "<group>"; };
+		3B6FBDA22A9DE55C00843459 /* FleaMarketAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleaMarketAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6FBDA62A9DE55C00843459 /* FleaMarketAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleaMarketAppUITests.swift; sourceTree = "<group>"; };
+		3B6FBDA82A9DE55C00843459 /* FleaMarketAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleaMarketAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BAEC4EB2A9E3305003B3B52 /* Electronics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Electronics.storyboard; sourceTree = "<group>"; };
+		3BAEC4EF2A9EDD48003B3B52 /* ElectronicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectronicsViewController.swift; sourceTree = "<group>"; };
+		3BAEC4FB2A9EE266003B3B52 /* FakeStoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreModel.swift; sourceTree = "<group>"; };
+		3BAEC4FD2A9EEC93003B3B52 /* TestFakeAPI.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestFakeAPI.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3BAEC4FE2A9EF270003B3B52 /* FakeStoreClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreClientError.swift; sourceTree = "<group>"; };
+		3BAEC5002A9EF2CA003B3B52 /* FakeStoreAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreAPIError.swift; sourceTree = "<group>"; };
+		3BAEC5022A9EF69C003B3B52 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		3BAEC5042A9EF728003B3B52 /* FakeStoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreAPI.swift; sourceTree = "<group>"; };
+		3BAEC5062A9EFE8E003B3B52 /* FakeStoreClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeStoreClient.swift; sourceTree = "<group>"; };
+		3BAEC5092A9F02AF003B3B52 /* ProductsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BAEC50B2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BAEC5112AA0179B003B3B52 /* Jewelery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Jewelery.storyboard; sourceTree = "<group>"; };
+		3BAEC5132AA017CC003B3B52 /* JeweleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweleryViewController.swift; sourceTree = "<group>"; };
+		3BAEC5152AA01842003B3B52 /* MensClothing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MensClothing.storyboard; sourceTree = "<group>"; };
+		3BAEC5172AA01851003B3B52 /* MensClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensClothingViewController.swift; sourceTree = "<group>"; };
+		3BAEC5192AA018F8003B3B52 /* WomensClothing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WomensClothing.storyboard; sourceTree = "<group>"; };
+		3BAEC51D2AA0196D003B3B52 /* WomensClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensClothingViewController.swift; sourceTree = "<group>"; };
+		48C37B999C42D589220DB980 /* Pods-FleaMarketApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketApp.debug.xcconfig"; path = "Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp.debug.xcconfig"; sourceTree = "<group>"; };
+		5BAD38C7935F6560317910B9 /* Pods_FleaMarketApp_FleaMarketAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleaMarketApp_FleaMarketAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		707716B8958A16DD41CBE2FE /* Pods_FleaMarketAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleaMarketAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D43F194A3D66A8EA2D3FDB /* Pods-FleaMarketApp-FleaMarketAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketApp-FleaMarketAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-FleaMarketApp-FleaMarketAppUITests/Pods-FleaMarketApp-FleaMarketAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		82BB90C82E4212F4A50A867E /* Pods-FleaMarketApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketApp.release.xcconfig"; path = "Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp.release.xcconfig"; sourceTree = "<group>"; };
+		A1D1996E192BBEFD657C7D57 /* Pods-FleaMarketAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketAppTests.release.xcconfig"; path = "Target Support Files/Pods-FleaMarketAppTests/Pods-FleaMarketAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A821BF9EE10D77DBBB313C17 /* Pods_FleaMarketApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleaMarketApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DD24078B52CE9D114D10AD /* Pods-FleaMarketApp-FleaMarketAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketApp-FleaMarketAppUITests.release.xcconfig"; path = "Target Support Files/Pods-FleaMarketApp-FleaMarketAppUITests/Pods-FleaMarketApp-FleaMarketAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F603350FB71E4B017876849D /* Pods-FleaMarketAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketAppTests.debug.xcconfig"; path = "Target Support Files/Pods-FleaMarketAppTests/Pods-FleaMarketAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B6FBD7F2A9DE55B00843459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D1CFC21F5F27D204A66D6D /* Pods_FleaMarketApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBD952A9DE55C00843459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CBD6FB58C1C8B02B128E1EF /* Pods_FleaMarketAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBD9F2A9DE55C00843459 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F49C6B8EA96DEFD720268CCC /* Pods_FleaMarketApp_FleaMarketAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B6FBD792A9DE55B00843459 = {
+			isa = PBXGroup;
+			children = (
+				3B6FBD842A9DE55B00843459 /* FleaMarketApp */,
+				3B6FBD9B2A9DE55C00843459 /* FleaMarketAppTests */,
+				3B6FBDA52A9DE55C00843459 /* FleaMarketAppUITests */,
+				3B6FBD832A9DE55B00843459 /* Products */,
+				97EBD900B3BB71079CFA93E7 /* Pods */,
+				B0C87FA9977EFD57F8C1457A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B6FBD832A9DE55B00843459 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FBD822A9DE55B00843459 /* FleaMarketApp.app */,
+				3B6FBD982A9DE55C00843459 /* FleaMarketAppTests.xctest */,
+				3B6FBDA22A9DE55C00843459 /* FleaMarketAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B6FBD842A9DE55B00843459 /* FleaMarketApp */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FBD852A9DE55B00843459 /* AppDelegate.swift */,
+				3B6FBD872A9DE55B00843459 /* SceneDelegate.swift */,
+				3BAEC4F62A9EDF35003B3B52 /* Utililty */,
+				3BAEC4FA2A9EE232003B3B52 /* Model */,
+				3B6FBDB52A9DE60B00843459 /* StoreSearch */,
+				3B6FBD8E2A9DE55C00843459 /* Assets.xcassets */,
+				3BAEC4FD2A9EEC93003B3B52 /* TestFakeAPI.playground */,
+				3B6FBD902A9DE55C00843459 /* LaunchScreen.storyboard */,
+				3B6FBD932A9DE55C00843459 /* Info.plist */,
+			);
+			path = FleaMarketApp;
+			sourceTree = "<group>";
+		};
+		3B6FBD9B2A9DE55C00843459 /* FleaMarketAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FBD9C2A9DE55C00843459 /* FleaMarketAppTests.swift */,
+			);
+			path = FleaMarketAppTests;
+			sourceTree = "<group>";
+		};
+		3B6FBDA52A9DE55C00843459 /* FleaMarketAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FBDA62A9DE55C00843459 /* FleaMarketAppUITests.swift */,
+				3B6FBDA82A9DE55C00843459 /* FleaMarketAppUITestsLaunchTests.swift */,
+			);
+			path = FleaMarketAppUITests;
+			sourceTree = "<group>";
+		};
+		3B6FBDB52A9DE60B00843459 /* StoreSearch */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5082A9F025E003B3B52 /* CollectionViewCell */,
+				3BAEC4F52A9EDEA4003B3B52 /* Products */,
+				3BAEC4F12A9EDE1A003B3B52 /* Electronics */,
+				3BAEC4F22A9EDE3B003B3B52 /* Jewelery */,
+				3BAEC4F32A9EDE52003B3B52 /* Men'sClothing */,
+				3BAEC4F42A9EDE7A003B3B52 /* Women'sClothing */,
+			);
+			path = StoreSearch;
+			sourceTree = "<group>";
+		};
+		3BAEC4F12A9EDE1A003B3B52 /* Electronics */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC4EB2A9E3305003B3B52 /* Electronics.storyboard */,
+				3BAEC4EF2A9EDD48003B3B52 /* ElectronicsViewController.swift */,
+			);
+			path = Electronics;
+			sourceTree = "<group>";
+		};
+		3BAEC4F22A9EDE3B003B3B52 /* Jewelery */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5112AA0179B003B3B52 /* Jewelery.storyboard */,
+				3BAEC5132AA017CC003B3B52 /* JeweleryViewController.swift */,
+			);
+			path = Jewelery;
+			sourceTree = "<group>";
+		};
+		3BAEC4F32A9EDE52003B3B52 /* Men'sClothing */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5152AA01842003B3B52 /* MensClothing.storyboard */,
+				3BAEC5172AA01851003B3B52 /* MensClothingViewController.swift */,
+			);
+			path = "Men'sClothing";
+			sourceTree = "<group>";
+		};
+		3BAEC4F42A9EDE7A003B3B52 /* Women'sClothing */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5192AA018F8003B3B52 /* WomensClothing.storyboard */,
+				3BAEC51D2AA0196D003B3B52 /* WomensClothingViewController.swift */,
+			);
+			path = "Women'sClothing";
+			sourceTree = "<group>";
+		};
+		3BAEC4F52A9EDEA4003B3B52 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B6FBD892A9DE55B00843459 /* ViewController.swift */,
+				3B6FBD8B2A9DE55B00843459 /* Main.storyboard */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		3BAEC4F62A9EDF35003B3B52 /* Utililty */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC4F72A9EE0BA003B3B52 /* API */,
+			);
+			path = Utililty;
+			sourceTree = "<group>";
+		};
+		3BAEC4F72A9EE0BA003B3B52 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC4F92A9EE0E2003B3B52 /* Request */,
+				3BAEC4F82A9EE0CD003B3B52 /* Error */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3BAEC4F82A9EE0CD003B3B52 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC4FE2A9EF270003B3B52 /* FakeStoreClientError.swift */,
+				3BAEC5002A9EF2CA003B3B52 /* FakeStoreAPIError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		3BAEC4F92A9EE0E2003B3B52 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5022A9EF69C003B3B52 /* HTTPMethod.swift */,
+				3BAEC5042A9EF728003B3B52 /* FakeStoreAPI.swift */,
+				3BAEC5062A9EFE8E003B3B52 /* FakeStoreClient.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		3BAEC4FA2A9EE232003B3B52 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC4FB2A9EE266003B3B52 /* FakeStoreModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BAEC5082A9F025E003B3B52 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5092A9F02AF003B3B52 /* ProductsCollectionViewCell.swift */,
+				3BAEC50B2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		97EBD900B3BB71079CFA93E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				48C37B999C42D589220DB980 /* Pods-FleaMarketApp.debug.xcconfig */,
+				82BB90C82E4212F4A50A867E /* Pods-FleaMarketApp.release.xcconfig */,
+				75D43F194A3D66A8EA2D3FDB /* Pods-FleaMarketApp-FleaMarketAppUITests.debug.xcconfig */,
+				C8DD24078B52CE9D114D10AD /* Pods-FleaMarketApp-FleaMarketAppUITests.release.xcconfig */,
+				F603350FB71E4B017876849D /* Pods-FleaMarketAppTests.debug.xcconfig */,
+				A1D1996E192BBEFD657C7D57 /* Pods-FleaMarketAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B0C87FA9977EFD57F8C1457A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A821BF9EE10D77DBBB313C17 /* Pods_FleaMarketApp.framework */,
+				5BAD38C7935F6560317910B9 /* Pods_FleaMarketApp_FleaMarketAppUITests.framework */,
+				707716B8958A16DD41CBE2FE /* Pods_FleaMarketAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B6FBD812A9DE55B00843459 /* FleaMarketApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6FBDAC2A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketApp" */;
+			buildPhases = (
+				0E10CDB9BC40D25DEEF82CCE /* [CP] Check Pods Manifest.lock */,
+				3B6FBD7E2A9DE55B00843459 /* Sources */,
+				3B6FBD7F2A9DE55B00843459 /* Frameworks */,
+				3B6FBD802A9DE55B00843459 /* Resources */,
+				1F3F68DCF6E2FAFF67C9E314 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FleaMarketApp;
+			productName = FleaMarketApp;
+			productReference = 3B6FBD822A9DE55B00843459 /* FleaMarketApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3B6FBD972A9DE55C00843459 /* FleaMarketAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6FBDAF2A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketAppTests" */;
+			buildPhases = (
+				D5AF2B23D3C32DC241505144 /* [CP] Check Pods Manifest.lock */,
+				3B6FBD942A9DE55C00843459 /* Sources */,
+				3B6FBD952A9DE55C00843459 /* Frameworks */,
+				3B6FBD962A9DE55C00843459 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6FBD9A2A9DE55C00843459 /* PBXTargetDependency */,
+			);
+			name = FleaMarketAppTests;
+			productName = FleaMarketAppTests;
+			productReference = 3B6FBD982A9DE55C00843459 /* FleaMarketAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3B6FBDA12A9DE55C00843459 /* FleaMarketAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B6FBDB22A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketAppUITests" */;
+			buildPhases = (
+				30E7AE14A7DE8712D29108BD /* [CP] Check Pods Manifest.lock */,
+				3B6FBD9E2A9DE55C00843459 /* Sources */,
+				3B6FBD9F2A9DE55C00843459 /* Frameworks */,
+				3B6FBDA02A9DE55C00843459 /* Resources */,
+				1DCD805C45338994446E85CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B6FBDA42A9DE55C00843459 /* PBXTargetDependency */,
+			);
+			name = FleaMarketAppUITests;
+			productName = FleaMarketAppUITests;
+			productReference = 3B6FBDA22A9DE55C00843459 /* FleaMarketAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B6FBD7A2A9DE55B00843459 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					3B6FBD812A9DE55B00843459 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					3B6FBD972A9DE55C00843459 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3B6FBD812A9DE55B00843459;
+					};
+					3B6FBDA12A9DE55C00843459 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 3B6FBD812A9DE55B00843459;
+					};
+				};
+			};
+			buildConfigurationList = 3B6FBD7D2A9DE55B00843459 /* Build configuration list for PBXProject "FleaMarketApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B6FBD792A9DE55B00843459;
+			productRefGroup = 3B6FBD832A9DE55B00843459 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B6FBD812A9DE55B00843459 /* FleaMarketApp */,
+				3B6FBD972A9DE55C00843459 /* FleaMarketAppTests */,
+				3B6FBDA12A9DE55C00843459 /* FleaMarketAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B6FBD802A9DE55B00843459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6FBD922A9DE55C00843459 /* LaunchScreen.storyboard in Resources */,
+				3BAEC51A2AA018F8003B3B52 /* WomensClothing.storyboard in Resources */,
+				3B6FBD8F2A9DE55C00843459 /* Assets.xcassets in Resources */,
+				3BAEC50C2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib in Resources */,
+				3BAEC4EC2A9E3305003B3B52 /* Electronics.storyboard in Resources */,
+				3B6FBD8D2A9DE55B00843459 /* Main.storyboard in Resources */,
+				3BAEC5162AA01842003B3B52 /* MensClothing.storyboard in Resources */,
+				3BAEC5122AA0179B003B3B52 /* Jewelery.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBD962A9DE55C00843459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBDA02A9DE55C00843459 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E10CDB9BC40D25DEEF82CCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FleaMarketApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DCD805C45338994446E85CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp-FleaMarketAppUITests/Pods-FleaMarketApp-FleaMarketAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp-FleaMarketAppUITests/Pods-FleaMarketApp-FleaMarketAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp-FleaMarketAppUITests/Pods-FleaMarketApp-FleaMarketAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F3F68DCF6E2FAFF67C9E314 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30E7AE14A7DE8712D29108BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FleaMarketApp-FleaMarketAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5AF2B23D3C32DC241505144 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FleaMarketAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B6FBD7E2A9DE55B00843459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BAEC4FF2A9EF270003B3B52 /* FakeStoreClientError.swift in Sources */,
+				3BAEC51E2AA0196D003B3B52 /* WomensClothingViewController.swift in Sources */,
+				3BAEC5072A9EFE8E003B3B52 /* FakeStoreClient.swift in Sources */,
+				3BAEC4F02A9EDD48003B3B52 /* ElectronicsViewController.swift in Sources */,
+				3B6FBD8A2A9DE55B00843459 /* ViewController.swift in Sources */,
+				3BAEC5052A9EF728003B3B52 /* FakeStoreAPI.swift in Sources */,
+				3B6FBD862A9DE55B00843459 /* AppDelegate.swift in Sources */,
+				3BAEC5032A9EF69C003B3B52 /* HTTPMethod.swift in Sources */,
+				3B6FBD882A9DE55B00843459 /* SceneDelegate.swift in Sources */,
+				3BAEC5012A9EF2CA003B3B52 /* FakeStoreAPIError.swift in Sources */,
+				3BAEC5182AA01851003B3B52 /* MensClothingViewController.swift in Sources */,
+				3BAEC5142AA017CC003B3B52 /* JeweleryViewController.swift in Sources */,
+				3BAEC50A2A9F02AF003B3B52 /* ProductsCollectionViewCell.swift in Sources */,
+				3BAEC4FC2A9EE266003B3B52 /* FakeStoreModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBD942A9DE55C00843459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6FBD9D2A9DE55C00843459 /* FleaMarketAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6FBD9E2A9DE55C00843459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B6FBDA92A9DE55C00843459 /* FleaMarketAppUITestsLaunchTests.swift in Sources */,
+				3B6FBDA72A9DE55C00843459 /* FleaMarketAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B6FBD9A2A9DE55C00843459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6FBD812A9DE55B00843459 /* FleaMarketApp */;
+			targetProxy = 3B6FBD992A9DE55C00843459 /* PBXContainerItemProxy */;
+		};
+		3B6FBDA42A9DE55C00843459 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B6FBD812A9DE55B00843459 /* FleaMarketApp */;
+			targetProxy = 3B6FBDA32A9DE55C00843459 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B6FBD8B2A9DE55B00843459 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B6FBD8C2A9DE55B00843459 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B6FBD902A9DE55C00843459 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B6FBD912A9DE55C00843459 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B6FBDAA2A9DE55C00843459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B6FBDAB2A9DE55C00843459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B6FBDAD2A9DE55C00843459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48C37B999C42D589220DB980 /* Pods-FleaMarketApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FleaMarketApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B6FBDAE2A9DE55C00843459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BB90C82E4212F4A50A867E /* Pods-FleaMarketApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FleaMarketApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3B6FBDB02A9DE55C00843459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F603350FB71E4B017876849D /* Pods-FleaMarketAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleaMarketApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FleaMarketApp";
+			};
+			name = Debug;
+		};
+		3B6FBDB12A9DE55C00843459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1D1996E192BBEFD657C7D57 /* Pods-FleaMarketAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleaMarketApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FleaMarketApp";
+			};
+			name = Release;
+		};
+		3B6FBDB32A9DE55C00843459 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75D43F194A3D66A8EA2D3FDB /* Pods-FleaMarketApp-FleaMarketAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FleaMarketApp;
+			};
+			name = Debug;
+		};
+		3B6FBDB42A9DE55C00843459 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DD24078B52CE9D114D10AD /* Pods-FleaMarketApp-FleaMarketAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DW275526Z6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.imael.FleaMarketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FleaMarketApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B6FBD7D2A9DE55B00843459 /* Build configuration list for PBXProject "FleaMarketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6FBDAA2A9DE55C00843459 /* Debug */,
+				3B6FBDAB2A9DE55C00843459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6FBDAC2A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6FBDAD2A9DE55C00843459 /* Debug */,
+				3B6FBDAE2A9DE55C00843459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6FBDAF2A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6FBDB02A9DE55C00843459 /* Debug */,
+				3B6FBDB12A9DE55C00843459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B6FBDB22A9DE55C00843459 /* Build configuration list for PBXNativeTarget "FleaMarketAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B6FBDB32A9DE55C00843459 /* Debug */,
+				3B6FBDB42A9DE55C00843459 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B6FBD7A2A9DE55B00843459 /* Project object */;
+}
