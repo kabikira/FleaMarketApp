@@ -32,6 +32,7 @@
 		3BAEC5182AA01851003B3B52 /* MensClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5172AA01851003B3B52 /* MensClothingViewController.swift */; };
 		3BAEC51A2AA018F8003B3B52 /* WomensClothing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAEC5192AA018F8003B3B52 /* WomensClothing.storyboard */; };
 		3BAEC51E2AA0196D003B3B52 /* WomensClothingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC51D2AA0196D003B3B52 /* WomensClothingViewController.swift */; };
+		3BAEC5222AA1AE3A003B3B52 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAEC5212AA1AE3A003B3B52 /* UIViewController+.swift */; };
 		71D1CFC21F5F27D204A66D6D /* Pods_FleaMarketApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A821BF9EE10D77DBBB313C17 /* Pods_FleaMarketApp.framework */; };
 		8CBD6FB58C1C8B02B128E1EF /* Pods_FleaMarketAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707716B8958A16DD41CBE2FE /* Pods_FleaMarketAppTests.framework */; };
 		F49C6B8EA96DEFD720268CCC /* Pods_FleaMarketApp_FleaMarketAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BAD38C7935F6560317910B9 /* Pods_FleaMarketApp_FleaMarketAppUITests.framework */; };
@@ -85,6 +86,7 @@
 		3BAEC5172AA01851003B3B52 /* MensClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MensClothingViewController.swift; sourceTree = "<group>"; };
 		3BAEC5192AA018F8003B3B52 /* WomensClothing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WomensClothing.storyboard; sourceTree = "<group>"; };
 		3BAEC51D2AA0196D003B3B52 /* WomensClothingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomensClothingViewController.swift; sourceTree = "<group>"; };
+		3BAEC5212AA1AE3A003B3B52 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		48C37B999C42D589220DB980 /* Pods-FleaMarketApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleaMarketApp.debug.xcconfig"; path = "Target Support Files/Pods-FleaMarketApp/Pods-FleaMarketApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5BAD38C7935F6560317910B9 /* Pods_FleaMarketApp_FleaMarketAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleaMarketApp_FleaMarketAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		707716B8958A16DD41CBE2FE /* Pods_FleaMarketAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleaMarketAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 			children = (
 				3B6FBD852A9DE55B00843459 /* AppDelegate.swift */,
 				3B6FBD872A9DE55B00843459 /* SceneDelegate.swift */,
+				3BAEC5202AA1AE0D003B3B52 /* Extensions */,
 				3BAEC4F62A9EDF35003B3B52 /* Utililty */,
 				3BAEC4FA2A9EE232003B3B52 /* Model */,
 				3B6FBDB52A9DE60B00843459 /* StoreSearch */,
@@ -288,6 +291,22 @@
 				3BAEC50B2A9F02EC003B3B52 /* ProductsCollectionViewCell.xib */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		3BAEC51F2AA1ADFA003B3B52 /* UIViewController+ */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC5212AA1AE3A003B3B52 /* UIViewController+.swift */,
+			);
+			path = "UIViewController+";
+			sourceTree = "<group>";
+		};
+		3BAEC5202AA1AE0D003B3B52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3BAEC51F2AA1ADFA003B3B52 /* UIViewController+ */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		97EBD900B3BB71079CFA93E7 /* Pods */ = {
@@ -559,6 +578,7 @@
 			files = (
 				3BAEC4FF2A9EF270003B3B52 /* FakeStoreClientError.swift in Sources */,
 				3BAEC51E2AA0196D003B3B52 /* WomensClothingViewController.swift in Sources */,
+				3BAEC5222AA1AE3A003B3B52 /* UIViewController+.swift in Sources */,
 				3BAEC5072A9EFE8E003B3B52 /* FakeStoreClient.swift in Sources */,
 				3BAEC4F02A9EDD48003B3B52 /* ElectronicsViewController.swift in Sources */,
 				3B6FBD8A2A9DE55B00843459 /* ViewController.swift in Sources */,

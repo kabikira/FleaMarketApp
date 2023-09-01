@@ -35,11 +35,7 @@ class ViewController: UIViewController {
             collectionView.delegate = self
             collectionView.dataSource = self
             collectionView.register(UINib.init(nibName: ProductsCollectionViewCell.className, bundle: nil), forCellWithReuseIdentifier: ProductsCollectionViewCell.className)
-            let layout = UICollectionViewFlowLayout()
-            layout.itemSize = CGSize(width: 120, height: 120)
-            layout.minimumLineSpacing = 5
-            layout.sectionInset = UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-            collectionView.collectionViewLayout = layout
+            collectionViewProductslayout(collectionView: collectionView)
         }
     }
     private var fakeStoreModel = [FakeStoreModel]()
@@ -140,4 +136,5 @@ extension ViewController: UICollectionViewDataSource {
         return fakeStoreModel.count
     }
 }
+
 
